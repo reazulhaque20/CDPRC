@@ -1,8 +1,5 @@
 package com.cdprc.model;
 
-
-import org.springframework.core.SpringVersion;
-
 public class Employees {
 
     private String id;
