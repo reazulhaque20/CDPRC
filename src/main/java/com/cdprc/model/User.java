@@ -1,8 +1,6 @@
 package com.cdprc.model;
 
 
-
-
 import javax.persistence.*;
 
 @Entity

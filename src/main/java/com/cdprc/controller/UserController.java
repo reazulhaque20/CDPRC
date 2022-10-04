@@ -23,24 +23,24 @@ public class UserController {
 
         List<Employees> eList = new ArrayList<>();
         List<Files> fList = new ArrayList<>();
-        eList.add(new Employees("1","Alice"));
-        eList.add(new Employees("2","John"));
-        eList.add(new Employees("3","Jane"));
-        eList.add(new Employees("4","Alice"));
-        eList.add(new Employees("5","Bob"));
+        eList.add(new Employees("1", "Alice"));
+        eList.add(new Employees("2", "John"));
+        eList.add(new Employees("3", "Jane"));
+        eList.add(new Employees("4", "Alice"));
+        eList.add(new Employees("5", "Bob"));
 
-        fList.add(new Files("100","jpeg"));
-        fList.add(new Files("Alice","png"));
-        fList.add(new Files("3","jpg"));
-        fList.add(new Files("1","jpg"));
-        fList.add(new Files("John","jpeg"));
+        fList.add(new Files("100", "jpeg"));
+        fList.add(new Files("Alice", "png"));
+        fList.add(new Files("3", "jpg"));
+        fList.add(new Files("1", "jpg"));
+        fList.add(new Files("John", "jpeg"));
 
         int x = FileService.findFileTypesByEmpName(eList, fList);
 
         List<User> listUsers = userRepository.findAll();
-        if(listUsers.size() > 0){
+        if (listUsers.size() > 0) {
             return listUsers;
-        }else{
+        } else {
             return null;
         }
 

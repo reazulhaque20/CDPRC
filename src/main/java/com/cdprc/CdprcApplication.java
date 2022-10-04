@@ -12,9 +12,9 @@ import java.util.List;
 @SpringBootApplication
 public class CdprcApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CdprcApplication.class, args);
+    public static void main(String[] args) {
+        SpringApplication.run(CdprcApplication.class, args);
 
-	}
+    }
 
 }

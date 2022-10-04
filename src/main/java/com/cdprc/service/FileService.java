@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class FileService {
 
-    public int findFileTypesByEmpName(List<Employees> employeesList, List<Files> filesList){
+    public int findFileTypesByEmpName(List<Employees> employeesList, List<Files> filesList) {
         Set<String> typeSet = new HashSet<>();
         Set<String> empSet = new HashSet<>();
 
